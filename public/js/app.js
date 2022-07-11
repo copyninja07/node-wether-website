@@ -8,8 +8,8 @@ weatherForm.addEventListener("submit", (e) => {
 
   const location = search.value;
 
-  m1.textContent = "Loading..";
-  m2.textContent = "Loading...";
+  m1.textContent = "Loading...";
+  m2.textContent = "";
 
   fetch("/weather?address=" + location).then((response) => {
     m1.textContent = "";
